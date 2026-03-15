@@ -25,84 +25,29 @@
       listMaxHeight: '400px',
       
       // ⭐⭐⭐ 在这里配置你的音乐列表 ⭐⭐⭐
-      // 推荐使用免费无版权音乐：https://pixabay.com/music/
-      // 更多中国风音乐：https://pixabay.com/music/search/chinese/
+      // 
+      // 💡 如何添加音乐：
+      // 1. 购买或下载无版权音乐 MP3 文件
+      // 2. 上传到阿里云 OSS 或其他 CDN
+      // 3. 复制下面的模板添加歌曲
+      //
+      // 模板：
+      // {
+      //   name: '歌曲名称',
+      //   artist: '艺术家',
+      //   url: 'https://你的音乐链接.mp3',
+      //   cover: 'https://封面图片链接.jpg',
+      //   lrc: '歌词文件链接（可选）'
+      // },
       audio: [
-        // === 轻音乐（保留1首）===
         {
           name: 'Relaxing Piano',
           artist: 'Lesfm',
           url: 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=relaxing-145038.mp3',
           cover: 'https://picsum.photos/300/300?random=1',
           lrc: ''
-        },
-        // === 中国风/粤语风格 ===
-        {
-          name: 'China',
-          artist: 'Pumpupthemind',
-          url: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_1c3f2c55c8.mp3?filename=china-1507.mp3',
-          cover: 'https://picsum.photos/300/300?random=2',
-          lrc: ''
-        },
-        {
-          name: 'Chinese Traditional',
-          artist: 'PeriTune',
-          url: 'https://cdn.pixabay.com/download/audio/2022/05/18/audio_6ba0411eaa.mp3?filename=chinese-traditional-14292.mp3',
-          cover: 'https://picsum.photos/300/300?random=3',
-          lrc: ''
-        },
-        // === 粤语风格纯音乐 ===
-        {
-          name: 'Hong Kong Night',
-          artist: 'Pumpupthemind',
-          url: 'https://cdn.pixabay.com/download/audio/2022/10/17/audio_69f2d2c332.mp3?filename=hong-kong-night-1506.mp3',
-          cover: 'https://picsum.photos/300/300?random=4',
-          lrc: ''
-        },
-        {
-          name: 'Canton Sunset',
-          artist: 'Michael Ghiglieri',
-          url: 'https://cdn.pixabay.com/download/audio/2022/03/10/audio_c8c8a73467.mp3?filename=canton-sunset-1505.mp3',
-          cover: 'https://picsum.photos/300/300?random=5',
-          lrc: ''
-        },
-        // === 摇滚/活力风格 ===
-        {
-          name: 'Energy',
-          artist: 'Bensound',
-          url: 'https://cdn.pixabay.com/download/audio/2022/10/30/audio_617a5e5a1e.mp3?filename=energy-10205.mp3',
-          cover: 'https://picsum.photos/300/300?random=6',
-          lrc: ''
-        },
-        {
-          name: 'Happy Rock',
-          artist: 'Benjamin Tissot',
-          url: 'https://cdn.pixabay.com/download/audio/2022/10/30/audio_8e4de9e1c7.mp3?filename=happy-rock-10206.mp3',
-          cover: 'https://picsum.photos/300/300?random=7',
-          lrc: ''
-        },
-        {
-          name: 'Punky',
-          artist: 'Benjamin Tissot',
-          url: 'https://cdn.pixabay.com/download/audio/2022/10/27/audio_6f8b0c1e16.mp3?filename=punky-10200.mp3',
-          cover: 'https://picsum.photos/300/300?random=8',
-          lrc: ''
-        },
-        // === 日式风格 ===
-        {
-          name: 'Matsuri',
-          artist: 'Dyalla',
-          url: 'https://cdn.pixabay.com/download/audio/2022/03/10/audio_c8c8a73467.mp3?filename=matsuri-1505.mp3',
-          cover: 'https://picsum.photos/300/300?random=9',
-          lrc: ''
-        },
-        {
-          name: 'Japan',
-          artist: 'Unicorn Heads',
-          url: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_1c3f2c55c8.mp3?filename=japan-1507.mp3',
-          cover: 'https://picsum.photos/300/300?random=10',
-          lrc: ''
         }
+        // 在这里添加更多歌曲...
       ]
     };
 
