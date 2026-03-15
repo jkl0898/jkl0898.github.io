@@ -39,15 +39,8 @@
       //   cover: 'https://封面图片链接.jpg',
       //   lrc: '歌词文件链接（可选）'
       // },
-    //   audio: [
-    //     {
-    //       name: 'Relaxing Piano',
-    //       artist: 'Lesfm',
-    //       url: 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=relaxing-145038.mp3',
-    //       cover: 'https://picsum.photos/300/300?random=1',
-    //       lrc: ''
-    //     },
-        // 👇 添加新歌曲 - GitHub + jsDelivr CDN
+      audio: [
+        // 👇 Canon in D - GitHub + jsDelivr CDN
         {
           name: 'Canon in D (Pachelbel)',
           artist: 'LAURENT BUCZEK',
