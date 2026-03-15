@@ -45,6 +45,13 @@
           name: 'Canon in D (Pachelbel)',
           artist: 'LAURENT BUCZEK',
           url: 'https://cdn.jsdelivr.net/gh/jkl0898/jkl0898.github.io@master/music/canon_in_d.mp3',
+          cover: 'https://picsum.photos/300/300?random=1',
+          lrc: ''
+        },
+        {
+          name: 'Canon in D Pachelbel',
+          artist: 'Classical',
+          url: 'https://cdn.jsdelivr.net/gh/jkl0898/jkl0898.github.io@master/music/canon_in_d_pachelbel.mp3',
           cover: 'https://picsum.photos/300/300?random=2',
           lrc: ''
         }
