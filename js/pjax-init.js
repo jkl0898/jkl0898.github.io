@@ -10,32 +10,27 @@
     return;
   }
 
-  // 需要排除的链接（不使用 pjax）
-  const excludeSelectors = [
-    'a[href^="javascript"]',
-    'a[href^="#"]',
-    'a[href*="atom.xml"]',
-    'a[href*="mailto:"]',
-    'a[target="_blank"]',
-    'a[download]',
-    '.fancybox',
-    '.article-share-link'
-  ];
-
-  // pjax 配置
-  $(document).pjax('a:not(' + excludeSelectors.join(',') + ')', {
+  // pjax 配置 - 对所有站内链接启用
+  $(document).pjax('a[href^="/"]', {
     container: '#container',
     fragment: '#container',
     timeout: 8000,
     cache: false,
-    storage: true,
-    filter: function(href) {
-      // 排除外部链接
-      if (href.hostname !== window.location.hostname) {
-        return false;
-      }
-      return true;
-    }
+    storage: true
+  });
+
+  // 同时支持完整域名链接
+  $(document).pjax('a[href^="' + window.location.origin + '"]', {
+    container: '#container',
+    fragment: '#container',
+    timeout: 8000,
+    cache: false,
+    storage: true
+  });
+
+  // 排除特殊链接
+  $(document).on('click', 'a[target="_blank"], a[download], a[href^="javascript"], a[href^="#"], a[href*="mailto:"], a[href*="atom.xml"]', function(e) {
+    e.stopPropagation();
   });
 
   // pjax 开始 - 显示加载动画
@@ -63,13 +58,17 @@
   $(document).on('pjax:error', function(e, xhr, err) {
     console.error('Pjax 加载失败:', err);
     // 如果加载失败，回退到正常页面跳转
-    window.location.href = e.relatedTarget.href;
+    if (e.relatedTarget && e.relatedTarget.href) {
+      window.location.href = e.relatedTarget.href;
+    }
   });
 
   // pjax 超时处理
   $(document).on('pjax:timeout', function(e) {
     console.warn('Pjax 加载超时，回退到正常跳转');
-    window.location.href = e.relatedTarget.href;
+    if (e.relatedTarget && e.relatedTarget.href) {
+      window.location.href = e.relatedTarget.href;
+    }
   });
 
   console.log('✅ Pjax 已初始化 - 跨页面音乐播放已启用');
