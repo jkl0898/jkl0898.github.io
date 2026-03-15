@@ -47,11 +47,11 @@
           cover: 'https://picsum.photos/300/300?random=1',
           lrc: ''
         },
-        // 👇 添加新歌曲 - 请替换 url 为实际链接
+        // 👇 添加新歌曲 - GitHub + jsDelivr CDN
         {
           name: 'Canon in D (Pachelbel)',
           artist: 'LAURENT BUCZEK',
-          url: 'https://leoxmusic.oss-cn-shenzhen.aliyuncs.com/canon_in_d.mp3?Expires=1773550390&OSSAccessKeyId=TMP.3KqB4zEWHHFjUimGwnDhrodFmq1zRpoqpD8pdVxCf2UGBXfCCvYecMExkbpScnwCfkNhpArX5oMpHWef7SyGPPmMVeGhiC&Signature=HDc86W2DQXZW8Pbql4OFnvfK%2BfI%3D',
+          url: 'https://cdn.jsdelivr.net/gh/jkl0898/jkl0898.github.io@main/music/canon_in_d.mp3',
           cover: 'https://picsum.photos/300/300?random=2',
           lrc: ''
         }
