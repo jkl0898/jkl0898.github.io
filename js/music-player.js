@@ -46,6 +46,14 @@
           url: 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=relaxing-145038.mp3',
           cover: 'https://picsum.photos/300/300?random=1',
           lrc: ''
+        },
+        // 👇 添加新歌曲 - 请替换 url 为实际链接
+        {
+          name: 'Canon in D (Pachelbel)',
+          artist: 'LAURENT BUCZEK',
+          url: 'https://leoxmusic.oss-cn-shenzhen.aliyuncs.com/canon_in_d.mp3?Expires=1773550390&OSSAccessKeyId=TMP.3KqB4zEWHHFjUimGwnDhrodFmq1zRpoqpD8pdVxCf2UGBXfCCvYecMExkbpScnwCfkNhpArX5oMpHWef7SyGPPmMVeGhiC&Signature=HDc86W2DQXZW8Pbql4OFnvfK%2BfI%3D',
+          cover: 'https://picsum.photos/300/300?random=2',
+          lrc: ''
         }
         // 在这里添加更多歌曲...
       ]
