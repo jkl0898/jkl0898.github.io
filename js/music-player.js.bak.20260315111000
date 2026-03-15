@@ -1,0 +1,88 @@
+/**
+ * 音乐播放器初始化脚本
+ * 使用 APlayer 库实现底部固定播放器
+ */
+
+(function($){
+  // 等待页面加载完成后初始化播放器
+  $(document).ready(function(){
+    initAPlayer();
+  });
+
+  function initAPlayer() {
+    // 配置选项
+    const playerOptions = {
+      container: document.getElementById('aplayer-fixed'),
+      autoplay: false, // 是否自动播放
+      loop: 'all', // 音频循环播放选项：'all', 'one', 'none'
+      order: 'list', // 播放顺序：'list', 'random'
+      preload: 'auto', // 音频预加载：'none', 'metadata', 'auto'
+      volume: 0.7, // 默认音量
+      mutex: true, // 阻止多个播放器同时播放
+      listFolded: true, // 初始状态下播放列表是否折叠
+      lrcType: 3, // 歌词类型：0 不显示，1 当前歌曲歌词，2 滚动歌词，3 网络歌词
+      listMaxHeight: '400px', // 播放列表最大高度
+      audio: [
+        // 示例音乐列表 - 请替换为你自己的音乐资源
+        {
+          name: '示例歌曲 1',
+          artist: '艺术家 1',
+          url: 'https://music.163.com/song/media/outer/url?id=示例 ID1.mp3',
+          cover: 'https://picsum.photos/150/150?random=1',
+          lrc: ''
+        },
+        {
+          name: '示例歌曲 2',
+          artist: '艺术家 2',
+          url: 'https://music.163.com/song/media/outer/url?id=示例 ID2.mp3',
+          cover: 'https://picsum.photos/150/150?random=2',
+          lrc: ''
+        }
+      ]
+    };
+
+    // 创建播放器实例
+    try {
+      window.aplayer = new APlayer(playerOptions);
+      
+      // 保存播放状态到 localStorage
+      if (localStorage.getItem('aplayer-volume') !== null) {
+        aplayer.volume(localStorage.getItem('aplayer-volume'), true);
+      }
+
+      // 监听音量变化并保存
+      aplayer.on('volumechange', function() {
+        localStorage.setItem('aplayer-volume', aplayer.volume);
+      });
+
+      console.log('🎵 音乐播放器初始化成功');
+    } catch (error) {
+      console.error('❌ 音乐播放器初始化失败:', error);
+    }
+  }
+
+  // 提供全局方法供外部调用
+  window.MusicPlayer = {
+    play: function() {
+      if (window.aplayer) {
+        aplayer.play();
+      }
+    },
+    pause: function() {
+      if (window.aplayer) {
+        aplayer.pause();
+      }
+    },
+    setVolume: function(volume) {
+      if (window.aplayer) {
+        aplayer.volume(volume, true);
+      }
+    },
+    addAudio: function(audio) {
+      if (window.aplayer) {
+        aplayer.addAudio(audio);
+      }
+    }
+  };
+
+})(jQuery);
