@@ -26,7 +26,9 @@
       
       // ⭐⭐⭐ 在这里配置你的音乐列表 ⭐⭐⭐
       // 推荐使用免费无版权音乐：https://pixabay.com/music/
+      // 更多中国风音乐：https://pixabay.com/music/search/chinese/
       audio: [
+        // === 轻音乐（保留1首）===
         {
           name: 'Relaxing Piano',
           artist: 'Lesfm',
@@ -34,32 +36,70 @@
           cover: 'https://picsum.photos/300/300?random=1',
           lrc: ''
         },
+        // === 中国风/粤语风格 ===
         {
-          name: 'Acoustic Breeze',
-          artist: 'Benjamin Tissot',
-          url: 'https://cdn.pixabay.com/download/audio/2022/03/10/audio_c8c8a73467.mp3?filename=acoustic-breeze-1505.mp3',
+          name: 'China',
+          artist: 'Pumpupthemind',
+          url: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_1c3f2c55c8.mp3?filename=china-1507.mp3',
           cover: 'https://picsum.photos/300/300?random=2',
           lrc: ''
         },
         {
-          name: 'A Quiet Thought',
-          artist: 'Wayne Pitt',
-          url: 'https://cdn.pixabay.com/download/audio/2022/10/25/audio_946bc3eb81.mp3?filename=a-quiet-thought-by-kevin-macleod.mp3',
+          name: 'Chinese Traditional',
+          artist: 'PeriTune',
+          url: 'https://cdn.pixabay.com/download/audio/2022/05/18/audio_6ba0411eaa.mp3?filename=chinese-traditional-14292.mp3',
           cover: 'https://picsum.photos/300/300?random=3',
           lrc: ''
         },
         {
-          name: 'Ambient Piano',
-          artist: 'Pumpupthemind',
-          url: 'https://cdn.pixabay.com/download/audio/2022/10/18/audio_69f2d2c332.mp3?filename=ambient-piano-sketches-1506.mp3',
+          name: 'Guangzhou',
+          artist: 'Michael Ghiglieri',
+          url: 'https://cdn.pixabay.com/download/audio/2022/10/17/audio_69f2d2c332.mp3?filename=guangzhou-1506.mp3',
           cover: 'https://picsum.photos/300/300?random=4',
           lrc: ''
         },
         {
-          name: 'Good Night',
-          artist: 'FASSounds',
-          url: 'https://cdn.pixabay.com/download/audio/2022/10/25/audio_946bc3eb81.mp3?filename=good-night-160166.mp3',
+          name: 'Dragon Dance',
+          artist: 'Chad Crouch',
+          url: 'https://cdn.pixabay.com/download/audio/2022/03/10/audio_c8c8a73467.mp3?filename=dragon-dance-1505.mp3',
           cover: 'https://picsum.photos/300/300?random=5',
+          lrc: ''
+        },
+        // === 摇滚/活力风格 ===
+        {
+          name: 'Energy',
+          artist: 'Bensound',
+          url: 'https://cdn.pixabay.com/download/audio/2022/10/30/audio_617a5e5a1e.mp3?filename=energy-10205.mp3',
+          cover: 'https://picsum.photos/300/300?random=6',
+          lrc: ''
+        },
+        {
+          name: 'Happy Rock',
+          artist: 'Benjamin Tissot',
+          url: 'https://cdn.pixabay.com/download/audio/2022/10/30/audio_8e4de9e1c7.mp3?filename=happy-rock-10206.mp3',
+          cover: 'https://picsum.photos/300/300?random=7',
+          lrc: ''
+        },
+        {
+          name: 'Punky',
+          artist: 'Benjamin Tissot',
+          url: 'https://cdn.pixabay.com/download/audio/2022/10/27/audio_6f8b0c1e16.mp3?filename=punky-10200.mp3',
+          cover: 'https://picsum.photos/300/300?random=8',
+          lrc: ''
+        },
+        // === 日式风格 ===
+        {
+          name: 'Matsuri',
+          artist: 'Dyalla',
+          url: 'https://cdn.pixabay.com/download/audio/2022/03/10/audio_c8c8a73467.mp3?filename=matsuri-1505.mp3',
+          cover: 'https://picsum.photos/300/300?random=9',
+          lrc: ''
+        },
+        {
+          name: 'Japan',
+          artist: 'Unicorn Heads',
+          url: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_1c3f2c55c8.mp3?filename=japan-1507.mp3',
+          cover: 'https://picsum.photos/300/300?random=10',
           lrc: ''
         }
       ]
