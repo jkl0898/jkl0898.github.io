@@ -1,5 +1,15 @@
 /* APlayer 样式文件 */
 
+/* Pjax 加载状态 */
+.pjax-loading {
+  cursor: wait;
+}
+
+.pjax-loading #wrap {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 /* 播放器容器 */
 #aplayer-fixed {
   position: fixed;

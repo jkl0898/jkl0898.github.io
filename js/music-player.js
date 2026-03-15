@@ -1,18 +1,17 @@
 /**
- * 音乐播放器配置示例文件
- * 
- * 使用方法：
- * 1. 复制此文件内容替换 /js/music-player.js 中的配置
- * 2. 根据实际情况修改音乐链接和封面
- * 3. 保存后刷新博客页面即可看到效果
+ * 音乐播放器配置
+ * 支持 pjax 无刷新切换，保持播放状态
  */
 
 (function($){
-  $(document).ready(function(){
-    initAPlayer();
-  });
-
+  // 检查播放器是否已初始化（支持 pjax）
   function initAPlayer() {
+    // 如果播放器已存在，不重复初始化
+    if (window.aplayer) {
+      console.log('🎵 播放器已存在，跳过初始化');
+      return;
+    }
+
     const playerOptions = {
       container: document.getElementById('aplayer-fixed'),
       autoplay: false,
@@ -82,6 +81,17 @@
       console.error('❌ 播放器初始化失败:', error);
     }
   }
+
+  // 页面加载时初始化
+  $(document).ready(function(){
+    initAPlayer();
+  });
+
+  // pjax 完成后不重新初始化播放器（保持播放状态）
+  $(document).on('pjax:complete', function() {
+    // 播放器继续播放，不做任何操作
+    console.log('🎵 Pjax 切换完成，播放器继续播放');
+  });
 
   window.MusicPlayer = {
     play: function() {
