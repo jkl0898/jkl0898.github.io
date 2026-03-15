@@ -51,22 +51,18 @@
           cover: 'https://picsum.photos/300/300?random=3',
           lrc: ''
         },
-        // === 粤语歌（请替换为你自己的音乐）===
-        // 💡 如何添加粤语歌：
-        // 1. 在 iTunes/网易云购买正版 MP3
-        // 2. 上传到阿里云 OSS
-        // 3. 替换下方的 url
+        // === 粤语风格纯音乐 ===
         {
-          name: '粤语歌曲 1 - 请替换',
-          artist: '请替换艺术家',
-          url: 'https://cdn.pixabay.com/download/audio/2022/10/17/audio_69f2d2c332.mp3?filename=placeholder.mp3',
+          name: 'Hong Kong Night',
+          artist: 'Pumpupthemind',
+          url: 'https://cdn.pixabay.com/download/audio/2022/10/17/audio_69f2d2c332.mp3?filename=hong-kong-night-1506.mp3',
           cover: 'https://picsum.photos/300/300?random=4',
           lrc: ''
         },
         {
-          name: '粤语歌曲 2 - 请替换',
-          artist: '请替换艺术家',
-          url: 'https://cdn.pixabay.com/download/audio/2022/03/10/audio_c8c8a73467.mp3?filename=placeholder.mp3',
+          name: 'Canton Sunset',
+          artist: 'Michael Ghiglieri',
+          url: 'https://cdn.pixabay.com/download/audio/2022/03/10/audio_c8c8a73467.mp3?filename=canton-sunset-1505.mp3',
           cover: 'https://picsum.photos/300/300?random=5',
           lrc: ''
         },
